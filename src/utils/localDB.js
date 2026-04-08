@@ -15,4 +15,25 @@ const addReadListToLocalDB = (book) => {
   }
 };
 
-export { getAllReadListFromLocalDB, addReadListToLocalDB };
+// To get wishlist data
+const getAllWishListFromLocalDB = () => {
+  const allWishList = localStorage.getItem("wishList");
+  if (allWishList) return JSON.parse(allWishList);
+  return [];
+};
+
+// To add new books to your wishlist
+const addWishListToLocalDB = (book) => {
+  const allWishList = getAllWishListFromLocalDB();
+  const isAlreadyExist = allWishList.find((bk) => bk.bookId === book.bookId);
+  if (!isAlreadyExist) {
+    allWishList.push(book);
+    localStorage.setItem("wishList", JSON.stringify(allWishList));
+  }
+};
+export {
+  getAllReadListFromLocalDB,
+  addReadListToLocalDB,
+  getAllWishListFromLocalDB,
+  addWishListToLocalDB,
+};
