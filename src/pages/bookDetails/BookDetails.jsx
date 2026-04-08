@@ -20,7 +20,7 @@ const BookDetails = () => {
   );
   console.log(expectedBook);
   const {
-    bookId,
+    // bookId,
     bookName,
     author,
     image,

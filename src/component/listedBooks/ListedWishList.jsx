@@ -10,7 +10,7 @@ const ListedWishList = ({ sortingType }) => {
   const [filteredWishList, setFilteredWishList] = useState(wishList);
 
   useEffect(() => {
-    let sortedData = [...wishList];
+    // let sortedData = [...wishList];
     if (sortingType) {
       if (sortingType === "pages") {
         const sortedData = [...wishList].sort(
