@@ -6,7 +6,7 @@
 
 ## 🔗 Project Links
 - **Live Deployment:**  [book-vibe-h.netlify.app](https://book-vibe-h.netlify.app/)
-- **Repository:** [GitHub Link](https://github.com/your-username/project-repo)
+- **Repository:** https://github.com/JohirulIslamHimel/book-vibe
 
 ---
 
@@ -58,7 +58,7 @@ Follow these steps to get the project running on your local machine:
 Clone the repository:
 
 Bash
-git clone [https://github.com/your-username/book-vibe.git](https://github.com/your-username/book-vibe.git)
+git clone https://github.com/JohirulIslamHimel/book-vibe.git
 Navigate to the project folder:
 
 Bash
